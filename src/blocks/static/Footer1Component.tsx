@@ -7,7 +7,7 @@ import { Facebook, Instagram, Linkedin, Twitter, Youtube } from "lucide-react";
 function Footer() {
   return (
     <footer className="lg:p-11 p-[5%]">
-      <div className="flex lg:flex-row justify-between mb-14">
+      <div className="flex lg:flex-row lg:justify-normal justify-between mb-14">
         <div className="flex flex-col lg:w-1/3">
           <a
             href="#"
