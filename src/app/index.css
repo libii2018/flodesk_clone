@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+body {
+    --primary: 217, 91%, 60%;
+    --primary-foreground: 0, 0%, 100%;
+    --text-foreground: #545454;
+    --secondary: 160, 84%, 39%;
+    --secondary-foreground: 0, 0%, 100%;
+    --button-radius: 5px;
+    --image-radius: 8px;
+    --header-font: "Plus Jakarta Sans";
+    --page-font: "Plus Jakarta Sans";
+    fontFamily: "var(--page-font)";
+}
+            
