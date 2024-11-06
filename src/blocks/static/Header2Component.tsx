@@ -2,7 +2,6 @@
 import React from 'react';
 import { Text } from '@/components/ui/base/text';
 import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
 
 function HeaderBlock() {
   return (

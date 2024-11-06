@@ -38,30 +38,40 @@ const datas = [
 
 export default function CarouselBlock() {
   return (
-    <div className="flex flex-col items-center justify-center">
-      <Text
-        as="h1"
-        className="text-[#241a17] lg:text-6xl md:text-5xl sm:text-4xl text-3xl font-medium text-center"
-      >
-        <span className="block">The world’s</span>
-        <span className="block">most intuitive</span>
-        <span className="block">email marketing platform</span>
-      </Text>
-
-      <Carousel
-        opts={{
-          align: "start",
-        }}
-        className="w-full h-full"
-      >
-        <CarouselContent className="flex items-center justify-center">
-          {datas.map((data, index) => (
-            <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-              <img src={data.src} alt={data.alt} />
-            </CarouselItem>
-          ))}
-        </CarouselContent>
-      </Carousel>
-    </div>
+    <section className="flex flex-col items-center justify-center p-8">
+      <div className="p-10 text-center">
+        <h2 className="text-6xl">See it in action</h2>
+      </div>
+      <div className="grid md:grid-cols-4 items-center justify-center grid-rows-1 lg:p-8 py-4 md:gap-x-10 gap-y-5">
+        <img
+          src="/1.webp"
+          alt=""
+          className="w-full max-h-96 object-cover aspect-square"
+        />
+        <img
+          src="/6.webp"
+          alt=""
+          className="w-full max-h-96 object-cover aspect-square"
+        />
+        <img
+          src="/3.webp"
+          alt=""
+          className="w-full max-h-96 object-cover aspect-square"
+        />
+        <img
+          src="/4.webp"
+          alt=""
+          className="w-full max-h-96 object-cover aspect-square"
+        />
+      </div>
+      <div className="flex flex-col items-center justify-normal p-10">
+        <a
+          href="#"
+          className="whitespace-nowrap inline-flex items-center text-white bg-black hover:bg-primary-800 font-medium rounded-[.5rem] text-sm px-5 py-2.5 text-center"
+        >
+          Try it for free
+        </a>
+      </div>
+    </section>
   );
 }

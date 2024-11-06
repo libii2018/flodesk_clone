@@ -1,7 +1,6 @@
 "use client";
 
 import { Text } from "@/components/ui/base/text";
-import { Button } from "@/components/ui/button";
 import {
   Carousel,
   CarouselContent,
@@ -54,19 +53,18 @@ export default function CarouselBlock() {
         setApi={setApi}
         className="w-full flex flex-col items-center lg:max-w-5xl max-w-sm overflow-hidden h-full"
       >
-        <CarouselContent className="h-full w-full lg:mb-12 mb-8">
+        <CarouselContent className="h-full w-full lg:mb-12 mb-8 text-white">
           {datas.map((data, index) => (
             <CarouselItem key={index}>
               <div className="flex flex-col items-center">
-                <Text
-                  as="h2"
+                <h2
                   className="lg:max-text-5xl max-w-sm lg:max-w-4xl mb-8 font-normal text-center"
                 >
                   {data.title}
-                </Text>
-                <Text as="h1" className="lg:text-9xl">
+                </h2>
+                <h1  className="lg:text-9xl">
                   {data.price}
-                </Text>
+                </h1>
               </div>
             </CarouselItem>
           ))}

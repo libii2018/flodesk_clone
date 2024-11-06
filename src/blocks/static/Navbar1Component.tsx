@@ -2,21 +2,16 @@
 
 import { useState } from "react";
 import { useMediaQuery } from "@uidotdev/usehooks";
-import { RxChevronDown, RxChevronRight } from "react-icons/rx";
-import { AnimatePresence, motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
 import clsx from "clsx";
 
 function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const isMobile = useMediaQuery("(max-width: 991px)");
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [isDropdownOpen2, setIsDropdownOpen2] = useState(false);
   return (
     <header className="block top-0 sticky z-50">
       <nav
         className={clsx(
-          "relative flex flex-col lg:flex-row lg:h-24 h-16 w-full items-center justify-between lg:px-12",
+          "relative flex flex-col lg:flex-row lg:h-20 h-16 w-full items-center justify-between lg:px-12",
           {
             "bg-[#241a17]": isMobileMenuOpen === true,
             "bg-white": isMobileMenuOpen === false,
@@ -118,7 +113,7 @@ function Header() {
               <div className="block pt-4 w-full">
                 <a
                   href="#"
-                  className="whitespace-nowrap px-5 py-0 h-10 rounded-[20.25px] cursor-pointer relative font-medium border-[0.125em] flex items-center justify-center w-full border-solid border-[#fcfbf9] bg-white text-[#241a17]"
+                  className="whitespace-nowrap inline-flex items-center text-white bg-black hover:bg-primary-800 font-medium rounded-[.5rem] text-sm px-5 py-2.5 text-center"
                 >
                   <span>Sign Up</span>
                 </a>
@@ -126,7 +121,7 @@ function Header() {
               <div className="block pt-4 w-full">
                 <a
                   href="#"
-                  className="whitespace-nowrap px-5 py-0 h-10 rounded-[20.25px] cursor-pointer relative font-medium border-[0.125em] flex items-center justify-center w-full border-solid border-[#fcfbf9] bg-[#241a17] text-[#fcfbf9]"
+                  className="whitespace-nowrap inline-flex items-center hover:bg-primary-800 font-medium rounded-[.5rem] text-sm px-5 py-2.5 text-center cursor-pointer  border-[0.125em] justify-center w-full border-solid border-[#fcfbf9] bg-[#241a17] text-[#fcfbf9]"
                 >
                   <span>Login</span>
                 </a>
@@ -161,7 +156,7 @@ function Header() {
             <div className="block w-full">
               <a
                 href="#"
-                className="whitespace-nowrap px-5 py-0 h-11 rounded-[20.25px] cursor-pointer relative font-medium border-[0.125em] flex items-center justify-center w-full border-solid border-[#fcfbf9] text-white bg-[#241a17] hover:rounded-none duration-500"
+                className="whitespace-nowrap rounded-[.5rem] text-sm px-5 py-2.5 text-center h-11 cursor-pointer relative font-medium border-[0.125em] flex items-center justify-center w-full border-solid border-[#fcfbf9] text-white bg-[#241a17] hover: duration-500"
               >
                 <span>Sign Up</span>
               </a>
@@ -169,7 +164,7 @@ function Header() {
             <div className="block w-full">
               <a
                 href="#"
-                className="whitespace-nowrap px-5 py-0 h-11 rounded-[20.25px] cursor-pointer relative font-medium border-[0.125em] flex items-center justify-center w-full border-solid border-[#241a17] text-[#241a17] bg-white hover:rounded-none duration-500"
+                className="whitespace-nowrap rounded-[.5rem] text-sm px-5 py-2.5 text-center h-11 cursor-pointer relative font-medium border-[0.125em] flex items-center justify-center w-full border-solid border-[#241a17] text-[#241a17] bg-white hover: duration-500"
               >
                 <span>Login</span>
               </a>
