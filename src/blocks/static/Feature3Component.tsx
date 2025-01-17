@@ -14,7 +14,7 @@ function FeatureBlock() {
           />
         </div>
         <div className="flex md:flex-col flex-row md:items-center md:justify-center md:w-1/2 w-full md:h-fit m-auto">
-          <div className="max-w-md">
+          <div className="max-w-md mx-auto">
             <h1 className="text-sm font-semibold uppercase tracking-wider mb-2">
               Booking & Invoicing
             </h1>

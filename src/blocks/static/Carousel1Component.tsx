@@ -27,8 +27,16 @@ const datas = [
       "In a few months of using Flodesk, Anna and Jesus grew their list by",
     price: "$60,000",
   },
-  { title: "yooooo", price: "$60,000" },
-  { title: "yooooo", price: "$60,000" },
+  {
+    title:
+      "In a few months of using Flodesk, Anna and Jesus grew their list by too two",
+    price: "$80,000",
+  },
+  {
+    title:
+      "In a few months of using Flodesk, Anna and Jesus grew their list by too three",
+    price: "1519.29%",
+  },
 ];
 
 export default function CarouselBlock() {
@@ -46,25 +54,21 @@ export default function CarouselBlock() {
   }, [api]);
 
   return (
-    <section className="flex flex-col items-center py-28 bg-[#241a17] relative w-full lg:h-[90vh]">
+    <section className="flex flex-col items-center pb-14 pt-56 px-12 bg-[#241a17] relative w-full">
       <Carousel
         opts={options}
         plugins={plugins}
         setApi={setApi}
-        className="w-full flex flex-col items-center lg:max-w-5xl max-w-sm overflow-hidden h-full"
+        className="w-full flex flex-col items-center lg:max-w-[1504px] max-w-sm overflow-hidden h-full gap-4"
       >
-        <CarouselContent className="h-full w-full lg:mb-12 mb-8 text-white">
+        <CarouselContent className="w-full lg:mb-2 mb-8 text-white h-[278px] md:h-[378px] lg:h-[478px]">
           {datas.map((data, index) => (
             <CarouselItem key={index}>
               <div className="flex flex-col items-center">
-                <h2
-                  className="lg:max-text-5xl max-w-sm lg:max-w-4xl mb-8 font-normal text-center"
-                >
+                <h2 className="text-3xl lg:text-4xl max-w-3xl lg:max-w-4xl mb-8 font-normal text-center">
                   {data.title}
                 </h2>
-                <h1  className="lg:text-9xl">
-                  {data.price}
-                </h1>
+                <h1 className="text-8xl lg:text-[140px]">{data.price}</h1>
               </div>
             </CarouselItem>
           ))}

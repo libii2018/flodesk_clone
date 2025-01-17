@@ -10,8 +10,8 @@ const config = {
     "./src/**/*.{ts,tsx}",
   ],
   safelist: [
-    'text-6xl',
-    'text-7xl',
+    "text-6xl",
+    "text-7xl",
     {
       pattern: /text-.+/,
     },
@@ -159,6 +159,9 @@ const config = {
         exitToRight: "exitToRight 0.2s ease-out",
         exitToLeft: "exitToLeft 0.2s ease-out",
         enterFromBotton: "enterFromBotton 0.2s ease-out",
+      },
+      fontFamily: {
+        garamond: ["var(--font-garamond)"],
       },
     },
   },

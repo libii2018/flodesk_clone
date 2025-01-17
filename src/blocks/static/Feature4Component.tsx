@@ -9,11 +9,11 @@ function FeatureBlock() {
           <img
             src="/1.webp"
             alt="image feature"
-            className="w-full h-96 aspect-square object-cover max-w-md m-auto"
+            className="w-full h-auto lg:h-96 aspect-square object-cover max-w-md m-auto"
           />
         </div>
-        <div className="flex md:flex-col flex-row md:items-center md:justify-center md:w-1/2 w-full md:h-fit m-auto">
-          <div className="max-w-md">
+        <div className="flex md:flex-col flex-row md:items-center md:justify-center md:w-1/2 w-full md:h-fit">
+          <div className="max-w-md mx-auto">
             <h1 className="text-sm font-semibold uppercase tracking-wider mb-2">
               User-Friendly Setup
             </h1>

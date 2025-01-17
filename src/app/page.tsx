@@ -13,7 +13,7 @@ import Pricing1Component from "../blocks/static/Pricing1Component";
 import Faq1Component from "../blocks/static/Faq1Component";
 
 const Home = () => (
-  <div className="mx-auto">
+  <div className="mx-auto font-garamond">
     <Navbar1Component />
     <Header1Component />
 
